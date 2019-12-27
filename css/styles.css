@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Instruct the browser to take margins, padding, etc. from inside the element.*/
+  user-select: none; /*Instruct the browser not to have the select option avaiable*/
+}
+
+
+html {
+  background-color: #ffbbcc;
+}
+
+img {
+  width: 120px;
+  height: 105px;
+}
+
+.cards {
+  width: 143px;
+  height: 125px;
+  border:  1px solid black;
+  display: inline-block;
+  float: left;
+  margin: 2px;
+  /* padding: 3px; */
+  background-color: white;
+}
+
+.cards:hover {
+  cursor: pointer;
+  background-color: #e5dfdf;
+}
+
+.back {
+  position: absolute;
+  width: 150px;
+  height: 125px;
+  padding: 5px;
+  transform: rotateY(180deg);
+  transition: transform 0.5s linear 0s; /*This is actually what maked the transorm happen*//*property time-duration type delay*/
+  backface-visibility: hidden;
+}
+
+.front {
+  position: absolute;
+  width: 150px;
+  height: 125px;
+  font-size: 90px;
+  font-weight: bolder;
+  padding: 0px 5px 50px 35px;
+  margin: 0;
+  text-shadow: 4px 3px 7px rgba(94, 119, 115, 0.82);
+  transform: rotateY(0deg); /*defining how we want out tranfsorm to be*/
+  transition: transform 0.5s linear 0s; /*This is actually what maked the transorm happen*/ /*property time-duration type delay*/
+  backface-visibility: hidden;
+
+}
+
+#backgroundResult {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 10;
+  display: none;
+}
+
+#new {
+  background-color: #fbdff0;
+  margin: 16px;
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #550a46;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ca7ebb; /*Width type color*/
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+#new:hover {
+  cursor: pointer;
+  background-color: #e5dfdf;
+}
+
+#game {
+  float: left;
+  width: 743px;
+  height: auto;
+  margin: 10px 20px 20px 100px;
+  border: 2px solid #550a46;
+  background-color: black;
+  box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+#h1 {
+  color: #504658;
+  text-align: center;
+  font-size: 90px;
+  word-spacing: 5px;
+  text-shadow: /*h-shadow*/3px /*v-shadow*/3px /*blur*/2px rgba(0, 0, 0, 0.4);
+}
+
+#h1Res {
+  margin: 0px 12px 12px 12px;
+  font-family: cursive;
+  text-align: center;
+  color: #4d0000;
+}
+
+#pRes {
+  color: #4d0000;
+  text-align: center;
+  font-size: 20px;
+}
+
+#imgDiv {
+  position: relative;
+  top: 10px;
+  width: 100px;
+  height: 107px;
+  margin: 20px auto;
+  top: 10px;
+
+}
+
+#imgDiv img {
+  width: 100px;
+  height: 107;
+}
+
+#timer {
+  margin: 50px;
+  margin-left: 45px;
+  text-align: center;
+  color: #550a46;
+  text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.4);
+}
+
+#result {
+  z-index: 10;
+  position: fixed;
+  width: 500px;
+  height: auto;
+  display: none;
+}
+
+#results {
+  float: right;
+  font-size: 30px;
+  margin: 100px 130px 100px 100px;
+}
+
+#score {
+  margin: 50px;
+  margin-left: 38px;
+  color: #550a46;
+  text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.4);
+}
+
+#okayBtn {
+  height: 40px;
+  width: 95px;
+  margin: 0 auto;
+}
+
+#okayBtn button {
+  height: 40px;
+  width: 95px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #511519;
+  cursor: pointer;
+}
+
+#popBody {
+  background-color: white;
+  height: 250px;
+  border-style: solid;
+  border-width: 2px 2px 0 2px;
+  border-color: #511519;
+  border-top-right-radius: 5px ;
+  border-top-left-radius: 5px;
+}
+
+#popFooter {
+  height: 100px;
+  background-color: #d77fa1;
+  padding: 25px;
+  border-style: solid;
+  border-width: 0 2px 2px 2px;
+  border-color: #511519;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Temperory Hiding the head, results, and game elements */
+
+/* #head, #results, #game {
+
+} */
